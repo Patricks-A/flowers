@@ -1,0 +1,32 @@
+/* Archivo exclusivo para controlar la posición de las flores */
+
+/* Flor 1 (Central) */
+.flower--1 {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: 10vmin !important;
+}
+
+/* Flor 2 (Derecha) */
+.flower--2 {
+  left: 65% !important;
+  transform: rotate(20deg) !important;
+  bottom: 8vmin !important;
+}
+
+/* Flor 3 (Izquierda) */
+.flower--3 {
+  left: 35% !important;
+  transform: rotate(-15deg) !important;
+  bottom: 8vmin !important;
+}
+
+/* Responsividad para móviles */
+@media only screen and (max-width: 600px) {
+  .flower--2 {
+    left: 70% !important;
+  }
+  .flower--3 {
+    left: 30% !important;
+  }
+}
